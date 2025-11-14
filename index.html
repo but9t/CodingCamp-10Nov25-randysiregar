@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <div class="form-container">
+            <form id="todoForm">
+                <div class="form-group">
+                    <label for="todoInput">Task</label>
+                    <input type="text" id="todoInput" placeholder="Apa yang mau kamu lakukan?">
+                    <div class="error-message" id="taskError">Please enter a task</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateInput">Due Date</label>
+                    <input type="date" id="dateInput">
+                    <div class="error-message" id="dateError">Please select a date</div>
+                </div>
+
+                <button type="submit" class="btn">Add Task</button>
+            </form>
+        </div>
+
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="filterDate">Filter by Date</label>
+                <input type="date" id="filterDate">
+            </div>
+
+            <div class="filter-group">
+                <button class="btn" id="clearFilter">Clear Filter</button>
+                <button class="btn" id="clearAll">Clear All</button>
+            </div>
+        </div>
+
+        <div class="todos-container" id="todosContainer">
+            <div class="empty-state" id="emptyState">
+                No tasks yet. Add a task to get started!
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
